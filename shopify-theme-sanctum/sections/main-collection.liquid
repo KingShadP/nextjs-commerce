@@ -1,0 +1,13 @@
+<section class="collection-grid" aria-label="Collection products">
+  <div class="collection-grid__header">
+    <span>Collection</span>
+    <h1>{{ collection.title }}</h1>
+  </div>
+  <div class="collection-products">
+    {% for product in collection.products %}
+      <div class="collection-product-card">
+        {% render 'product-card' with product %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

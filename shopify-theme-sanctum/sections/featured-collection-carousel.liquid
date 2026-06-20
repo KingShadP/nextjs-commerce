@@ -1,0 +1,17 @@
+<section class="featured-collection-carousel" id="featured-selections" aria-label="Featured collection carousel">
+  <div class="featured-collection-carousel__header">
+    <div>
+      <span>01 | Featured Collection</span>
+      <h2>Featured Selections</h2>
+    </div>
+    <span class="hint">Drag or swipe to explore</span>
+  </div>
+  <div class="carousel-shell" data-product-carousel>
+    {% assign featured_products = collections[section.settings.collection].products | slice: 0, 8 %}
+    {% for product in featured_products %}
+      <div class="carousel-card">
+        {% render 'product-card' with product %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

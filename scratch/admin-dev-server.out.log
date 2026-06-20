@@ -1,0 +1,67 @@
+Already up to date
+Done in 1.8s using pnpm v11.7.0
+   ▲ Next.js 15.6.0-canary.60 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.168:3000
+   - Environments: .env.local
+   - Experiments (use with caution):
+     ✓ inlineCss
+     ✓ ppr
+     ✓ rdcForNavigations (enabled by `experimental.ppr`)
+     ✓ useCache
+
+ ✓ Starting...
+ ✓ Ready in 8.1s
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 28.1s
+ GET /admin 200 in 29139ms
+ ○ Compiling /admin/login ...
+ HEAD /admin 307 in 591ms
+ ✓ Compiled /admin/login in 3.6s
+ HEAD /admin/login 200 in 4165ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.7s
+ GET / 200 in 809ms
+ GET / 200 in 806ms
+ GET / 200 in 592ms
+ GET / 200 in 750ms
+ GET / 200 in 447ms
+ GET / 200 in 604ms
+ GET / 200 in 890ms
+ GET / 500 in 11848ms
+ GET /admin/login 200 in 3591ms
+ ○ Compiling /admin/design ...
+ ✓ Compiled /admin/design in 2.7s
+ GET /admin/design 200 in 14153ms
+ POST /admin/login 303 in 14268ms
+ GET /admin 200 in 3811ms
+ ✓ Compiled in 173ms
+ ✓ Compiled /admin in 97ms
+ GET /admin 200 in 1501ms
+ GET /admin 200 in 4943ms
+ GET /admin/design 200 in 348ms
+ GET /admin/design 200 in 5610ms
+ GET /admin 200 in 2547ms
+ GET /admin 200 in 4895ms
+ ✓ Compiled /admin in 971ms
+ ✓ Compiled in 2.4s
+ GET /admin 200 in 1414ms
+ GET /admin 200 in 2835ms
+ GET /admin 200 in 2874ms
+ GET /admin 200 in 3021ms
+ GET /admin 200 in 2765ms
+ GET /admin 200 in 5069ms
+ ✓ Compiled in 245ms
+ ✓ Compiled in 360ms
+ ✓ Compiled /admin in 97ms
+ GET /admin 200 in 1983ms
+ GET /admin 200 in 1027ms
+ GET /admin 200 in 852ms
+ GET /admin 200 in 568ms
+ GET /admin 200 in 1284ms
+ ✓ Compiled /admin/design in 220ms
+ GET /admin/design 200 in 1287ms
+ GET /admin/design 200 in 960ms
+ GET /admin 200 in 1157ms
+[?25h
+[ELIFECYCLE] Command failed with exit code 4294967295.

@@ -1,0 +1,27 @@
+<div class="cart-drawer" id="CartDrawer" aria-hidden="true">
+  <div class="cart-drawer__panel">
+    <button class="cart-drawer__close" type="button" data-close-cart>×</button>
+    <h2>Your Cart</h2>
+    <div class="cart-drawer__contents">
+      {% if cart.item_count > 0 %}
+        <ul class="cart-items">
+          {% for line in cart.items %}
+            <li class="cart-item">
+              <div class="cart-item__details">
+                <span class="cart-item__title">{{ line.product.title }}</span>
+                <span class="cart-item__quantity">Qty: {{ line.quantity }}</span>
+              </div>
+              <span class="cart-item__price">{{ line.line_price | money }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="cart-drawer__footer">
+          <span class="cart-total">Subtotal: {{ cart.total_price | money }}</span>
+          <a class="button button--primary" href="/checkout">Checkout</a>
+        </div>
+      {% else %}
+        <p class="cart-empty">Your cart is empty.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>

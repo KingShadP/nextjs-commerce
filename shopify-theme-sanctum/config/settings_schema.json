@@ -1,0 +1,285 @@
+[
+  {
+    "name": "Theme Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Colors & Branding"
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background color",
+        "default": "#090807"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text color",
+        "default": "#f5f3ef"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Accent color",
+        "default": "#c5a880"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary",
+        "label": "Secondary color",
+        "default": "#5c4f44"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_image",
+        "label": "Logo image"
+      },
+      {
+        "type": "header",
+        "content": "Cinematic Environment"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_fog",
+        "label": "Enable smoky fog",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "fog_opacity",
+        "label": "Fog opacity",
+        "default": 18,
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_light_sweep",
+        "label": "Enable gold light sweep",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "light_sweep_opacity",
+        "label": "Light sweep opacity",
+        "default": 32,
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_floor_reflection",
+        "label": "Enable floor reflection",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_grain",
+        "label": "Enable cinematic grain texture",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "grain_opacity",
+        "label": "Grain opacity",
+        "default": 5,
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "type": "range",
+        "id": "motion_intensity",
+        "label": "Motion intensity",
+        "default": 7,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "type": "header",
+        "content": "Typography"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_heading",
+        "label": "Heading font",
+        "default": "serif"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_body",
+        "label": "Body font",
+        "default": "sans-serif"
+      },
+      {
+        "type": "range",
+        "id": "font_size_base",
+        "label": "Base font size (px)",
+        "default": 16,
+        "min": 12,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "letter_spacing",
+        "label": "Letter spacing (em)",
+        "default": 2,
+        "min": 0,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "header",
+        "content": "Animations & Effects"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_scroll_animations",
+        "label": "Enable scroll animations",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_hover_effects",
+        "label": "Enable hover effects",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_particles",
+        "label": "Enable particle system",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "particle_count",
+        "label": "Particle count",
+        "default": 40,
+        "min": 10,
+        "max": 100,
+        "step": 5
+      },
+      {
+        "type": "range",
+        "id": "animation_speed",
+        "label": "Animation speed multiplier",
+        "default": 100,
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "%"
+      },
+      {
+        "type": "header",
+        "content": "Layout & Spacing"
+      },
+      {
+        "type": "range",
+        "id": "max_width",
+        "label": "Max page width (px)",
+        "default": 1280,
+        "min": 960,
+        "max": 1920,
+        "step": 80
+      },
+      {
+        "type": "range",
+        "id": "section_spacing",
+        "label": "Section spacing (rem)",
+        "default": 6,
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "border_radius",
+        "label": "Border radius (px)",
+        "default": 0,
+        "min": 0,
+        "max": 20,
+        "step": 2
+      },
+      {
+        "type": "header",
+        "content": "Components"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_breadcrumbs",
+        "label": "Show breadcrumbs",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_product_reviews",
+        "label": "Show product reviews",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_related_products",
+        "label": "Show related products",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "related_products_count",
+        "label": "Related products count",
+        "default": 4,
+        "min": 2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "type": "header",
+        "content": "SEO & Accessibility"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_lazy_loading",
+        "label": "Enable lazy loading for images",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_srcset",
+        "label": "Enable responsive images (srcset)",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "meta_description",
+        "label": "Store meta description"
+      }
+    ]
+  },
+  {
+    "name": "Search & Navigation",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "predictive_search_enabled",
+        "label": "Enable predictive search",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "search_results_count",
+        "label": "Search results limit",
+        "default": 10,
+        "min": 5,
+        "max": 50,
+        "step": 5
+      }
+    ]
+  }
+]

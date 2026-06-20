@@ -1,0 +1,25 @@
+# ignore build outputs and cache
+.next/
+out/
+.vercel/
+
+# ignore package manager files
+node_modules/
+
+# ignore backups
+backup-sanctum/
+backup-sanctum-current/
+backup-sanctum*
+
+# ignore all audio, video, and huge binary files
+*.mp3
+*.mp4
+*.wav
+*.zip
+*.tar.gz
+
+# ignore other large images or media in public
+public/rooms/
+public/brand/
+public/ChatGPT*
+public/regenerated*

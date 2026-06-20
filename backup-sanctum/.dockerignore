@@ -1,0 +1,25 @@
+# Never send these to the build context
+node_modules/
+dist/
+.git/
+*.log
+
+# Secrets — never bake into image
+.env
+.env.local
+.env.*.local
+
+# Dev noise
+.DS_Store
+README.md
+
+# Large scratch/analysis files not needed for build
+*.txt
+acquisition_grid_inspect.txt
+app_grid_search.txt
+app_render_main.txt
+extracted_strings.txt
+found_tracks.txt
+keyword_context.txt
+shopify_export_inspect.txt
+bundle_full.js

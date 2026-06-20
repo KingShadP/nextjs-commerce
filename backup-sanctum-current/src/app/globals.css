@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0A0908;
+  --foreground: #F5F3EF;
+  --skims-sand: #EAE6DF;
+  --skims-cocoa: #5C4F44;
+  --skims-clay: #AC9E8F;
+  --skims-charcoal: #1C1A18;
+  --skims-onyx: #0D0C0B;
+  --skims-accent: #C5A880;
+  
+  --font-sans: var(--font-geist-sans), Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-skims-sand: var(--skims-sand);
+  --color-skims-cocoa: var(--skims-cocoa);
+  --color-skims-clay: var(--skims-clay);
+  --color-skims-charcoal: var(--skims-charcoal);
+  --color-skims-onyx: var(--skims-onyx);
+  --color-skims-accent: var(--skims-accent);
+  
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0908;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E2A27;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5C4F44;
+}
+
+/* Scanline animation */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.animate-scanline {
+  animation: scanline 8s linear infinite;
+}
+
+/* Marquee scrolling animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Grid lines for architectural blueprint feel */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(197, 168, 128, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(197, 168, 128, 0.03) 1px, transparent 1px);
+}
+
+/* Aspect ratio boxes */
+.aspect-pdp {
+  aspect-ratio: 3 / 4;
+}
+
+/* Blur effects */
+.backdrop-blur-glass {
+  backdrop-filter: blur(16px);
+  background-color: rgba(13, 12, 11, 0.75);
+}
+
+/* Custom Reticle */
+.cursor-crosshair {
+  cursor: crosshair;
+}
+
+/* Compressive hover overlays */
+.compress-overlay {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.compress-overlay:hover {
+  transform: scale(0.98);
+}
+
+/* Spatial OS utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass-panel {
+  background: rgba(13, 12, 11, 0.55);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-accent {
+  background: rgba(13, 12, 11, 0.75);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(197, 168, 128, 0.15);
+}
+

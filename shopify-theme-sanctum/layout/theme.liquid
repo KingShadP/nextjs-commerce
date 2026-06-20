@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page_title }} - {{ shop.name }}</title>
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+    {{ content_for_header }}
+  </head>
+  <body class="theme-body">
+    <div class="cinematic-environment" aria-hidden="true">
+      <div class="cinematic-room cinematic-room-entry" style="background-image:url('{{ 'cinematic_room_1.jpg' | asset_url }}')"></div>
+      <div class="cinematic-room cinematic-room-salon" style="background-image:url('{{ 'cinematic_room_2.jpg' | asset_url }}')"></div>
+      <div class="cinematic-room cinematic-room-archive" style="background-image:url('{{ 'cinematic_room_3.jpg' | asset_url }}')"></div>
+      <div class="cinematic-text-safety"></div>
+      <canvas class="cinematic-particles"></canvas>
+      <div class="cinematic-fog cinematic-fog-back"></div>
+      <div class="cinematic-light-sweep"></div>
+      <div class="cinematic-fog cinematic-fog-front"></div>
+      <div class="cinematic-floor"></div>
+      <div class="cinematic-grain"></div>
+    </div>
+
+    {% section 'header' %}
+    <main id="MainContent" class="main-content">{{ content_for_layout }}</main>
+    {% section 'cart-drawer' %}
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    {{ content_for_footer }}
+  </body>
+</html>

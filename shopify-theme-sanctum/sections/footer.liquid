@@ -1,0 +1,38 @@
+{%- comment -%}
+  Footer specs
+{%- endcomment -%}
+
+<footer class="w-full border-t border-white/5 py-12 bg-black/45 select-none pb-28">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8 items-start text-left">
+    <div class="space-y-4">
+      <div class="flex items-center gap-2">
+        <img src="{{ 'logo_3.png' | asset_url }}" alt="Mark" class="w-4.5 h-4.5">
+        <span class="font-serif text-sm text-white tracking-[4px] uppercase font-bold">{{ shop.name }}</span>
+      </div>
+      <p class="font-sans text-[9px] text-skims-sand/35 leading-relaxed tracking-[0.5px]">
+        Premium posture engineering contours, ribbed foundations, and double-fleece heavyweight loungewear. Made to retain dimensions.
+      </p>
+    </div>
+    <div></div>
+    <div class="space-y-4 font-sans text-[8.5px] tracking-[2.5px] uppercase">
+      <span class="text-skims-accent block font-bold">Client Support Protocols</span>
+      <div class="space-y-2 text-skims-sand/40">
+        <div><a href="/pages/shipping" class="hover:text-white transition-colors">Shipping Operations</a></div>
+        <div><a href="/pages/returns" class="hover:text-white transition-colors">Returns & Restores</a></div>
+        <div><a href="/pages/terms" class="hover:text-white transition-colors">Secure Terms</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 pt-12 border-t border-white/5 flex justify-between items-center text-[7.5px] font-sans text-white/20 tracking-[2px] uppercase">
+    <div>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}. ALL ASSETS RESERVED.</div>
+    <div>SHAD P ARCHITECTURE SPEC 08</div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": []
+}
+{% endschema %}

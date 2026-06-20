@@ -1,0 +1,183 @@
+<!-- FAQ accordion section -->
+<section class="faq-section">
+  <div class="faq-container">
+    <div class="faq-header">
+      <span>{{ section.settings.label }}</span>
+      <h2>{{ section.settings.title }}</h2>
+      {% if section.settings.description %}
+        <p>{{ section.settings.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="faq-items">
+      {% for block in section.blocks %}
+        <details class="faq-item" data-faq-item>
+          <summary class="faq-question">
+            {{ block.settings.question }}
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            {{ block.settings.answer }}
+          </div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section label",
+      "default": "Questions?"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "How long does shipping take?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>Standard shipping takes 5-7 business days</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+      "blocks": [{ "type": "question" }, { "type": "question" }, { "type": "question" }]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .faq-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .faq-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .faq-header span {
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #c5a880;
+  }
+
+  .faq-header h2 {
+    margin: 0.75rem 0 1rem;
+    font-size: 2.25rem;
+  }
+
+  .faq-header p {
+    color: rgba(245, 243, 239, 0.75);
+  }
+
+  .faq-items {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .faq-item {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    background: rgba(13, 12, 11, 0.9);
+  }
+
+  .faq-item[open] {
+    border-color: rgba(197, 168, 128, 0.3);
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-icon {
+    transition: transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: #c5a880;
+  }
+
+  .faq-item[open] .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(245, 243, 239, 0.75);
+    line-height: 1.8;
+  }
+
+  .faq-answer p {
+    margin: 0;
+  }
+
+  .faq-answer p + p {
+    margin-top: 1rem;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-faq-item]').forEach((item) => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('[data-faq-item]').forEach((other) => {
+        if (other !== item && other.hasAttribute('open')) {
+          // Close others if needed
+        }
+      });
+    });
+  });
+</script>

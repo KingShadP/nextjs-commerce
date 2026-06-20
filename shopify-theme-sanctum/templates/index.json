@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "hero-slideshow"
+    },
+    "marquee": {
+      "type": "marquee-ribbon"
+    },
+    "specifications": {
+      "type": "technical-dossier"
+    },
+    "featured_carousel": {
+      "type": "featured-collection-carousel"
+    },
+    "newsletter": {
+      "type": "newsletter"
+    }
+  },
+  "order": [
+    "slideshow",
+    "marquee",
+    "specifications",
+    "featured_carousel",
+    "newsletter"
+  ]
+}

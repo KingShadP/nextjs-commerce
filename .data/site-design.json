@@ -1,0 +1,68 @@
+{
+  "brandName": "KINGSHADP",
+  "brandDescriptor": "THE CREATOR | THE CREATE",
+  "logoUrl": "/logo_3.png",
+  "showHeaderLogo": true,
+  "announcement": "Experience and witness kingshadp",
+  "accentColor": "#D2A565",
+  "backgroundColor": "#43403D",
+  "foregroundColor": "#FFAD0A",
+  "heroImageOpacity": 0.3,
+  "overlayStrength": 0.68,
+  "motionIntensity": 1.15,
+  "fogEnabled": true,
+  "lightSweepEnabled": true,
+  "floorReflectionEnabled": true,
+  "grainEnabled": true,
+  "roomImages": [
+    "/cinematic_room_1.jpg",
+    "/cinematic_room_2.jpg",
+    "/cinematic_room_3.jpg"
+  ],
+  "heroSlides": [
+    {
+      "imgSrc": "/slide-dragon-1.jpg",
+      "subtitle": "The Giragon Collection | Limited Edition",
+      "title": "MEDITERRANEAN ORANGE COTTON FLEECE.",
+      "primaryBtnText": "Shop Orange",
+      "primaryBtnHref": "/search?q=orange"
+    },
+    {
+      "imgSrc": "/slide-dragon-2.jpg",
+      "subtitle": "The Giragon Collection | Limited Edition",
+      "title": "OBSIDIAN BLACK POST-ACTIVE KNIT.",
+      "primaryBtnText": "Shop Obsidian",
+      "primaryBtnHref": "/search?q=black"
+    },
+    {
+      "imgSrc": "/slide-dragon-3.jpg",
+      "subtitle": "The Giragon Collection | Limited Edition",
+      "title": "CREAM ALABASTER HEAVYWEIGHT SWEATER.",
+      "primaryBtnText": "Shop Alabaster",
+      "primaryBtnHref": "/search?q=cream"
+    },
+    {
+      "imgSrc": "/slide-dragon-4.jpg",
+      "subtitle": "The Giragon Collection | Limited Edition",
+      "title": "CORAL PINK CONTUSION SWEATSHIRT.",
+      "primaryBtnText": "Shop Coral",
+      "primaryBtnHref": "/search?q=coral"
+    },
+    {
+      "imgSrc": "/slide-dragon-5.jpg",
+      "subtitle": "The Giragon Collection | Limited Edition",
+      "title": "PASTEL SUNLIGHT HEAVY COTTON CREW.",
+      "primaryBtnText": "Shop Sunlight",
+      "primaryBtnHref": "/search?q=yellow"
+    }
+  ],
+  "homepageSectionOrder": [
+    "ticker",
+    "features",
+    "lookbook",
+    "featured",
+    "newsletter",
+    "ethos"
+  ],
+  "updatedAt": "2026-06-18T09:48:19.699Z"
+}
