@@ -1,7 +1,6 @@
 export default {
+  outputFileTracingRoot: process.cwd(),
   experimental: {
-    ppr: true,
-    inlineCss: true,
     useCache: true,
   },
   images: {
